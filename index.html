@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- AOS CDN CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+   
+</head>
+
+<body>
+   
+
+    <section id="section1">
+        <div class="header_secstion">
+            <nav>
+                <div class="logo"></div>
+                <ul class="menu">
+                    <li data-aos="fade-down" data-aos-duration="2000" data-aos-delay="100"><a href="#section1">Inicio</a></li>
+                    <li data-aos="fade-down" data-aos-duration="2000" data-aos-delay="200"><a href="#about">Sobre Mi</a></li>
+                    <li data-aos="fade-down" data-aos-duration="2000" data-aos-delay="300"><a href="#proyectos">Proyectos</a></li>
+                    <li data-aos="fade-down" data-aos-duration="2000" data-aos-delay="400"><a href="#studies">Estudios</a></li>
+                    <li data-aos="fade-down" data-aos-duration="2000" data-aos-delay="500"><a href="#hobbies">Hobbies</a></li>
+                    <li data-aos="fade-down" data-aos-duration="2000" data-aos-delay="600"><a href="#contact">Contacto</a></li>
+                </ul>
+                <div class="bars">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </nav>
+
+            <div class="client_info">
+                
+                <div class="rectangulo-unico"></div>
+                
+                <h1 class="text" data-aos="fade-right" data-aos-duration="2000" data-aos-delay="600">Soy <b>un</b> Desarrollador Web</h1>
+                <h2 data-aos="fade-right" data-aos-duration="2000" data-aos-delay="700">Hola Soy Johan</h2>
+                <p> Este Portafolio es una colección visual de trabajos, habilidades y proyectos. </p>
+                <div class="icon">
+                    <li><a href="" data-aos="fade-right" data-aos-duration="2000" data-aos-delay="900"><i class="fa-solid fa-envelope"></i></i></a></li>
+                    <li><a href="" data-aos="fade-right" data-aos-duration="2000" data-aos-delay="1000"><i class="fa-brands fa-whatsapp"></i></a></li>
+                    <li><a href="" data-aos="fade-right" data-aos-duration="2000" data-aos-delay="1100"><i class="fa-brands fa-github"></i></a></li>
+                    <li><a href="" data-aos="fade-right" data-aos-duration="2000" data-aos-delay="1200"><i class="fa-brands fa-linkedin"></i></a></li>
+                </div>
+                <button data-aos="fade-right" data-aos-duration="2000" data-aos-delay="1300">Ver Mas</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Importar Librerías -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.0/typed.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        // Responsive Menu
+        let bar = document.querySelector(".bars .fa-bars");
+        let menu = document.querySelector(".menu");
+
+        // Mostrar/Ocultar Menú
+        bar.addEventListener("click", function () {
+            menu.classList.toggle("show_menu");
+        });
+
+        // Inicializar Animaciones
+        AOS.init();
+
+        // Efecto de texto
+        var typed = new Typed('.text', {
+            strings: ['Designer', ' Soy un Diseñador', 'Desarrollador Web'],
+
+            typeSpeed: 100,
+            backSpeed: 80,
+            showCursor: false,
+            loop: true,
+            loopCount: Infinity,
+        });
+    </script>
+
+
+
+<section class="about-me" id="about">
+    <div class="about-me-content">
+        <!-- Información principal y título -->
+        <div class="section-title" data-aos="fade-up" data-aos-duration="100">
+            <h2>Sobre Mí</h2>
+            <p class="section-subtitle">¡Bienvenido a mi página! Aquí te cuento un poco sobre mí.</p>
+        </div>
+
+        <!-- Texto de presentación -->
+        <div class="about-description" data-aos="fade-in" data-aos-duration="1500" data-aos-delay="100">
+            <p>
+                Soy Johan Smith Useche Laiton, un desarrollador web con pasión por la creación de soluciones innovadoras. Mi enfoque está en el diseño de interfaces intuitivas y en el desarrollo de software con tecnologías modernas como HTML, CSS, JavaScript y Python. A lo largo de mi carrera, he trabajado en una variedad de proyectos que me han permitido perfeccionar mis habilidades y seguir creciendo como profesional.
+            </p>
+        </div>
+
+        <!-- Contenedor de imagen y habilidades -->
+        <div class="about-details" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="400">
+            <div class="profile-image" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="600">
+                <img src="../pagina-principal/img/perfil.avif" alt="Foto de Johan Smith" />
+            </div>
+
+            <!-- Lista de habilidades con progresión -->
+            <div class="skills" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="800">
+                <h3>Mis Habilidades</h3>
+                <ul>
+                    <li><span>HTML & CSS</span><div class="progress-bar"><div class="progress" style="width: 90%;"></div></div></li>
+                    <li><span>JavaScript</span><div class="progress-bar"><div class="progress" style="width: 80%;"></div></div></li>
+                    <li><span>Python</span><div class="progress-bar"><div class="progress" style="width: 70%;"></div></div></li>
+                    <li><span>PHP</span><div class="progress-bar"><div class="progress" style="width: 60%;"></div></div></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Botones interactivos -->
+        <div class="cta-buttons" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="1000">
+            <a href="#contact" class="btn btn-primary">Contáctame</a>
+            <a href="#" class="btn btn-secondary" download>Descargar CV</a>
+        </div>
+    </div>
+</section>
+
+    
+      
+     
+
+    <section class="projects-section" id="proyectos">
+        <h2 data-aos="fade-down" data-aos-delay="100">Mis Proyectos</h2>
+        
+        <!-- Proyecto 1 -->
+        <div class="project" data-aos="fade-right" data-aos-delay="200">
+          <div class="project-image">
+            <img src="./img/agencia de viajes.PNG" alt="Proyecto Agencia de Viajes">
+          </div>
+          <div class="project-content">
+            <p class="featured-text" data-aos="fade-up" data-aos-delay="300">Proyecto Destacado</p>
+            <h3 class="project-title" data-aos="fade-up" data-aos-delay="400">Agencia de Viajes</h3>
+            <p class="project-description" data-aos="fade-up" data-aos-delay="500">
+              Plataforma para explorar paquetes turísticos, reservar destinos únicos y descubrir aventuras personalizadas.
+            </p>
+            <a href="#" class="project-link" data-aos="zoom-in" data-aos-delay="600">Explorar Proyecto</a>
+          </div>
+        </div>
+        
+        <!-- Proyecto 2 -->
+        <div class="project" data-aos="fade-left" data-aos-delay="200">
+          <div class="project-image">
+            <img src="./img/pagian-futbol.PNG" alt="Proyecto Página de Fútbol">
+          </div>
+          <div class="project-content">
+            <p class="featured-text" data-aos="fade-up" data-aos-delay="300">Proyecto Destacado</p>
+            <h3 class="project-title" data-aos="fade-up" data-aos-delay="400">Página de Fútbol</h3>
+            <p class="project-description" data-aos="fade-up" data-aos-delay="500">
+              Sitio interactivo para fanáticos del fútbol, con estadísticas en vivo, noticias y comunidades deportivas.
+            </p>
+            <a href="#" class="project-link" data-aos="zoom-in" data-aos-delay="600">Explorar Proyecto</a>
+          </div>
+        </div>
+     
+        <!-- Proyecto 3 -->
+        <div class="project" data-aos="fade-right" data-aos-delay="200">
+          <div class="project-image">
+            <img src="./img/servicios_arquitectura.PNG" alt="Proyecto Equipo Creativo">
+          </div>
+          <div class="project-content">
+            <p class="featured-text" data-aos="fade-up" data-aos-delay="300">Proyecto Destacado</p>
+            <h3 class="project-title" data-aos="fade-up" data-aos-delay="400">Equipo Creativo</h3>
+            <p class="project-description" data-aos="fade-up" data-aos-delay="500">
+              Presentación de un equipo de construccion con una página web para proyectos colaborativos.
+            </p>
+            <a href="#" class="project-link" data-aos="zoom-in" data-aos-delay="600">Explorar Proyecto</a>
+          </div>
+        </div>
+
+
+        
+      </section>
+     
+<!-- Sección de Estudios -->
+<section id="studies">
+    <h2 data-aos="fade-up" data-aos-delay="100">Mis Estudios y Certificaciones</h2>
+    <div class="studies-container">
+        
+        <!-- Título Universitario -->
+        <div class="study-item" data-aos="fade-up" data-aos-delay="200">
+            <div class="study-icon">
+                <i class="fas fa-graduation-cap"></i>
+            </div>
+            <div class="study-details">
+                <h3>Tecnologo</h3>
+                <p class="study-description">Estudié una tecnologo en programacion , desarrollando habilidades en investigación y análisis.</p>
+                <span class="study-duration">2023 - 2025| SENA</span>
+            </div>
+            <div class="study-more">
+                <p>Durante mi formación, participé en proyectos de investigación y actividades extracurriculares que expandieron mi visión profesional.</p>
+            </div>
+        </div>
+
+        <!-- Certificación Front-End -->
+        <div class="study-item" data-aos="fade-up" data-aos-delay="300">
+            <div class="study-icon">
+                <i class="fas fa-code"></i>
+            </div>
+            <div class="study-details">
+                <h3>Certificación Front-End</h3>
+                <p class="study-description">Certificación en desarrollo Front-End, especializada en HTML, CSS, JavaScript y frameworks modernos como React.</p>
+                <span class="study-duration">2024 | Certificación Online</span>
+            </div>
+            <div class="study-more">
+                <p>El curso cubrió desde las bases del diseño web hasta el desarrollo de aplicaciones interactivas, dominando tecnologías como React, Vue.js, y otras.</p>
+            </div>
+        </div>
+
+        <!-- Curso de Desarrollo Web -->
+        <div class="study-item" data-aos="fade-up" data-aos-delay="400">
+            <div class="study-icon">
+                <i class="fas fa-laptop-code"></i>
+            </div>
+            <div class="study-details">
+                <h3>Curso de python</h3>
+                <p class="study-description">Curso integral de desarrollo python que incluyó  la realizacion de procedimientos y algoritmos .</p>
+                <span class="study-duration">2023 | Territorium</span>
+            </div>
+            <div class="study-more">
+                <p>El curso incluyó diversos temas</p>
+            </div>
+        </div>
+
+        <!-- Curso de UI/UX Design -->
+        <div class="study-item" data-aos="fade-up" data-aos-delay="500">
+            <div class="study-icon">
+                <i class="fas fa-paint-brush"></i>
+            </div>
+            <div class="study-details">
+                <h3>Curso ingles</h3>
+                <p class="study-description">Curso de diseño de ingles b2 enfocado en crear los presentes y la pronuciacion.</p>
+                <span class="study-duration">2022 | Plataforma XYZ</span>
+            </div>
+            <div class="study-more">
+                <p>Aprendí a dominar la pronuciCION DE los presentes.</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- Sección de Hobbies -->
+<section id="hobbies">
+    <h2 data-aos="fade-up">Mis Hobbies</h2>
+    <div class="hobbies-container">
+        <!-- Programación -->
+        <div class="hobby-item" data-aos="fade-right" data-aos-delay="100">
+            <div class="hobby-icon">
+                <i class="fa-solid fa-code"></i>
+            </div>
+            <div class="hobby-details">
+                <h3>Programación</h3>
+                <p class="hobby-description">Me encanta aprender nuevas tecnologías y crear proyectos web innovadores.</p>
+                <p class="hobby-duration">Desde 2018</p>
+                <p class="hobby-more">He trabajado en varios proyectos de desarrollo web usando frameworks como React y Vue.js.</p>
+            </div>
+        </div>
+        
+        <!-- Videojuegos -->
+        <div class="hobby-item" data-aos="fade-right" data-aos-delay="200">
+            <div class="hobby-icon">
+                <i class="fa-solid fa-gamepad"></i>
+            </div>
+            <div class="hobby-details">
+                <h3>Videojuegos</h3>
+                <p class="hobby-description">Disfruto los videojuegos como una forma de relajación y diversión.</p>
+                <p class="hobby-duration">Desde que era niño</p>
+                <p class="hobby-more">Me gustan los juegos de estrategia y acción como Free Fire y League of Legends.</p>
+            </div>
+        </div>
+        
+        <!-- Senderismo -->
+        <div class="hobby-item" data-aos="fade-right" data-aos-delay="300">
+            <div class="hobby-icon">
+                <i class="fa-solid fa-mountain"></i>
+            </div>
+            <div class="hobby-details">
+                <h3>Senderismo</h3>
+                <p class="hobby-description">Explorar la naturaleza y hacer caminatas al aire libre son actividades que disfruto mucho.</p>
+                <p class="hobby-duration">Durante el último año</p>
+                <p class="hobby-more">Me gusta practicar senderismo en diferentes parques nacionales.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Sección de Contacto -->
+<section id="contact">
+    <div class="contact-container" data-aos="fade-up">
+        <h2>Contacto</h2>
+<p class="contact-subtitle">¡Me encantaría saber de ti! Completa el formulario y me pondre en contacto contigo lo antes posible.</p>
+
+        <form class="contact-form" data-aos="fade-up" data-aos-delay="100">
+            <div class="input-group">
+                <label for="name">Nombre</label>
+                <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+            </div>
+
+            <div class="input-group">
+                <label for="email">Correo Electrónico</label>
+                <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required>
+            </div>
+
+            <div class="input-group">
+                <label for="message">Mensaje</label>
+                <textarea id="message" name="message" rows="6" placeholder="Escribe tu mensaje" required></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn" data-aos="fade-up" data-aos-delay="200">Enviar</button>
+        </form>
+
+        <div class="contact-info" data-aos="fade-up" data-aos-delay="300">
+            <p><i class="fa-solid fa-location-pin"></i> Dirección: kr86 A  #53-22 sur</p>
+            <p><i class="fa-solid fa-phone"></i> Teléfono: +57 2108990802</p>
+            <p><i class="fa-solid fa-envelope"></i> Email: johannuseche2020@gmail.com</p>
+        </div>
+    </div>
+</section>
+
+
+</body>
+
+</html>
